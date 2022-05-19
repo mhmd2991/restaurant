@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --greenColor: #27ae60;
+    --whiteColor: #ffffff;
+    --blackColor: #192a56;
+    --lightColor: #666666;
+    --boxShadow: 0 .5rem 1.5rem rgba(0 0 0 / .1);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 55%;
+}
+
+@media(min-width: 992px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--lightColor);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--greenColor);
+    border-radius: 30px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+section,
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+section:nth-child(even) {
+    background-color: #eee;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover {
+    background-color: var(--greenColor);
+    letter-spacing: .1rem;
+}
+
+.sub-heading {
+    text-align: center;
+    color: var(--greenColor);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: center;
+    color: var(--blackColor);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* XLarge */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/* XXLarge */
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
